@@ -1,0 +1,78 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f4f6f8;
+}
+
+header{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:#222;
+text-align:center;
+padding:10px;
+}
+
+nav button{
+margin:5px;
+padding:10px 20px;
+border:none;
+background:#0b3d91;
+color:white;
+cursor:pointer;
+}
+
+nav button:hover{
+background:#1456c2;
+}
+
+section{
+display:none;
+padding:30px;
+}
+
+.active{
+display:block;
+}
+
+form{
+max-width:400px;
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+
+button[type="submit"]{
+background:#0b3d91;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table, th, td{
+border:1px solid #ccc;
+}
+
+th, td{
+padding:10px;
+text-align:left;
+}
+
+#successMessage{
+color:green;
+font-weight:bold;
+}

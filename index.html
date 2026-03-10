@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cyber Crime Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Cyber Crime Management Portal</h1>
+<p>Report Cyber Crimes Safely</p>
+</header>
+
+<nav>
+<button onclick="showSection('home')">Home</button>
+<button onclick="showSection('report')">Report Crime</button>
+<button onclick="showSection('complaints')">View Complaints</button>
+</nav>
+
+<section id="home" class="active">
+<h2>Welcome</h2>
+<p>This portal allows citizens to report cyber crimes such as:</p>
+
+<ul>
+<li>Online fraud</li>
+<li>Social media harassment</li>
+<li>Phishing attacks</li>
+<li>Identity theft</li>
+<li>Cyber stalking</li>
+</ul>
+
+<p>Your report will be securely stored.</p>
+</section>
+
+<section id="report">
+<h2>File Cyber Crime Complaint</h2>
+
+<form id="crimeForm">
+
+<label>Name</label>
+<input type="text" id="name" required>
+
+<label>Email</label>
+<input type="email" id="email" required>
+
+<label>Crime Type</label>
+<select id="crimeType">
+<option>Online Fraud</option>
+<option>Hacking</option>
+<option>Cyber Bullying</option>
+<option>Identity Theft</option>
+<option>Phishing</option>
+</select>
+
+<label>Description</label>
+<textarea id="description" required></textarea>
+
+<button type="submit">Submit Complaint</button>
+
+</form>
+
+<p id="successMessage"></p>
+
+</section>
+
+<section id="complaints">
+<h2>Submitted Complaints</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Crime Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody id="complaintTable"></tbody>
+
+</table>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
